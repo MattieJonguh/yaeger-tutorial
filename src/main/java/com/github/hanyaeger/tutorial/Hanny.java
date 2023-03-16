@@ -3,10 +3,8 @@ package com.github.hanyaeger.tutorial;
 import com.github.hanyaeger.api.Coordinate2D;
 import com.github.hanyaeger.api.Size;
 import com.github.hanyaeger.api.entities.impl.DynamicSpriteEntity;
-
 import com.github.hanyaeger.api.userinput.KeyListener;
 import javafx.scene.input.KeyCode;
-
 import java.util.Set;
 
 
@@ -17,7 +15,7 @@ public class Hanny  extends DynamicSpriteEntity implements KeyListener {
     }
 
     @Override
-    public void onPressedKeysChange(Set<KeyCode> set) {
+    public void onPressedKeysChange(Set<KeyCode> pressedKeys) {
         if(pressedKeys.contains(KeyCode.LEFT)){
             setMotion(3,270d);
         } else if(pressedKeys.contains(KeyCode.RIGHT)){
